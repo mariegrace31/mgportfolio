@@ -145,3 +145,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .projects-grid > * { flex:none; height:100%; }
   .project-image-frame { inset:20px; }
 }
+@media (max-width:650px) {
+  .hero-copy h1 { font-size:36px; }
+  .tech-label { display:none; }
+  .code-card { bottom:-7px; }
+  .hero-actions .button { min-height:36px; padding-inline:10px; font-size:9px; }
+  .projects-grid { grid-auto-columns:78%; }
+}
