@@ -17,7 +17,7 @@ Open http://localhost:3000. Use Node.js 20.9 or newer (required by this Next.js 
 - Skills, experience, stats, projects, and articles: `data/`
 - Portrait image: replace `app/assets/profile.jpg` with your preferred portrait (keep the import path and update the file extension if it changes).
 - CV: add `public/marie-grace-cv.pdf`.
-- Project thumbnails currently use CSS mockups in `components/sections/Projects.jsx` and can be replaced with project images.
+- Project screenshots are imported from `app/assets/yetuqahwah.png`, `app/assets/evogym.png`, and `app/assets/lkrecruitment.png` in `components/sections/Projects.jsx`.
 - Update the testimonial name, role, avatar, and quote in `components/sections/CTA.jsx`.
 - The contact form validates fields, submits to Formspree, and shows a success popup after a successful response.
 

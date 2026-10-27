@@ -1,2 +1,42 @@
-import { ArrowRight, MoveUpRight } from "lucide-react"; import Container from "@/components/ui/Container"; import Card from "@/components/ui/Card"; import SectionTitle from "@/components/ui/SectionTitle"; import Reveal from "@/components/ui/Reveal"; import { projects } from "@/data/projects";
-export default function Projects(){return <section id="projects" className="section section-projects"><Container><div className="projects-heading"><SectionTitle eyebrow="SELECTED PROJECTS" title={<>Some of My <span className="gradient-text">Recent Work</span></>} description="A selection of projects shaped by collaboration, curiosity, and care."/></div><p className="projects-note">These are freelance projects I contributed to. Projects completed for organizations are not included here.</p><div className="projects-grid">{projects.map((p,i)=><Reveal key={p.number} delay={i*.09}><Card className="project-card"><div className={`project-visual visual-${p.visual}`}><div className="visual-noise"/><span className="project-number">{p.number}</span><div className="mock-window"><div className="mock-bar"><i/><i/><i/><span>{p.visual === "yuvo" ? "YUVO — Fragrance" : p.visual === "erp" ? "basje / workspace" : "STUDIO NORTH"}</span></div>{p.visual === "erp"?<div className="mock-erp"><div className="mock-side"><b>bt.</b><i/><i/><i/><i/></div><div className="mock-content"><small>MONDAY, 12 AUGUST</small><b>Good morning, Marie ✨</b><div className="mock-metrics"><i/><i/><i/></div><div className="mock-row"/><div className="mock-row short"/></div></div>:p.visual === "yuvo"?<div className="mock-yuvo"><small>THE ART OF SCENT</small><b>Find your<br/>signature.</b><span>DISCOVER THE COLLECTION ↗</span><i/></div>:<div className="mock-studio"><small>INDEPENDENT CREATIVE STUDIO</small><b>Ideas made<br/><em>visible.</em></b><span>SELECTED WORK — 2024</span></div>}</div><span className="visual-caption">{p.type}</span></div><div className="project-info"><div className="project-title-row"><h3>{p.title}</h3><a aria-label={`View ${p.title} project`} href="#contact" className="round-link"><MoveUpRight size={17}/></a></div><p>{p.description}</p><div className="project-tags">{p.tags.map(tag=><span key={tag}>{tag}</span>)}</div><a href="#contact" className="project-link">View Project <ArrowRight size={14}/></a></div></Card></Reveal>)}</div><div className="carousel-dots" aria-label="Project slides"><span className="current"/><span/><span/></div></Container></section>}
+import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
+import yetuImage from "@/app/assets/yetuqahwah.png";
+import evogymImage from "@/app/assets/evogym.png";
+import lkRecruitmentImage from "@/app/assets/lkrecruitment.png";
+import Container from "@/components/ui/Container";
+import Card from "@/components/ui/Card";
+import Button from "@/components/ui/Button";
+import BrandIcon from "@/components/ui/BrandIcon";
+import SectionTitle from "@/components/ui/SectionTitle";
+import Reveal from "@/components/ui/Reveal";
+import { projects } from "@/data/projects";
+
+const projectImages = {
+  yetu: yetuImage,
+  evogym: evogymImage,
+  lk: lkRecruitmentImage,
+};
+
+export default function Projects() {
+  return <section id="projects" className="section section-projects"><Container>
+    <div className="projects-heading"><SectionTitle eyebrow="SELECTED PROJECTS" title={<>Some of My <span className="gradient-text">Recent Work</span></>} description="A selection of projects shaped by collaboration, curiosity, and care."/></div>
+    <p className="projects-note">These are selected projects I worked on as a freelancer; projects I built as part of an organization team are not included.</p>
+    <div className="projects-grid">{projects.map((project, index) => <Reveal key={project.title} delay={index * .09}>
+      <Card className="project-card">
+        <div className={`project-visual visual-${project.visual}`}>
+          <div className="project-image-frame"><Image src={projectImages[project.visual]} alt={`Screenshot of the ${project.title} website`} fill sizes="(max-width: 650px) 70vw, (max-width: 900px) 36vw, 28vw" className="project-image"/></div>
+        </div>
+        <div className="project-info">
+          <h3>{project.title}</h3>
+          <p>{project.description}</p>
+          <div className="project-tags">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
+          <div className="project-actions">
+            <Button href={project.demo} className="project-action" target="_blank" rel="noreferrer">Demo <ArrowUpRight size={14}/></Button>
+            <Button href={project.github} variant="outline" className="project-action" target="_blank" rel="noreferrer"><BrandIcon name="github" size={14}/> GitHub</Button>
+          </div>
+        </div>
+      </Card>
+    </Reveal>)}</div>
+    <div className="carousel-dots" aria-label="Project slides"><span className="current"/><span/><span/></div>
+  </Container></section>;
+}

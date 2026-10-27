@@ -1,5 +1,29 @@
 export const projects = [
-  { number: "01", title: "Basje Tech ERP", type: "HR & ERP PLATFORM", description: "A thoughtful internal platform that brings people operations and business workflows into one clear, connected experience.", tags: ["Next.js", "React", "Tailwind"], visual: "erp" },
-  { number: "02", title: "YUVO", type: "E-COMMERCE · BEAUTY", description: "An elegant fragrance storefront paired with a practical dashboard for keeping the whole shop in tune.", tags: ["Next.js", "E-commerce", "Dashboard"], visual: "yuvo" },
-  { number: "03", title: "Studio North", type: "CREATIVE PORTFOLIO", description: "A flexible digital home for an independent creative studio, designed to let the work take center stage.", tags: ["React", "Motion", "Design"], visual: "studio" },
+  {
+    title: "Yetu Qahwah",
+    type: "SPECIALTY COFFEE · E-COMMERCE",
+    description: "A website showcasing Yetu Qahwah’s own specialty coffee collection and the stories behind the brand.",
+    tags: ["Next.js", "Tailwind CSS", "Firebase", "Node.js"],
+    visual: "yetu",
+    demo: "https://yetuqahwah.com/",
+    github: "https://github.com/mariegrace31/yetuqahwah",
+  },
+  {
+    title: "Evogym",
+    type: "FITNESS · WEB APP",
+    description: "A fitness website offering classes and training options to help people build strength, stay active, and work toward their personal goals.",
+    tags: ["React", "TypeScript", "Tailwind CSS"],
+    visual: "evogym",
+    demo: "https://yourfitnessapp.netlify.app/",
+    github: "https://github.com/mariegrace31/fitness_app",
+  },
+  {
+    title: "LK Recruitment",
+    type: "RECRUITMENT · JOBS",
+    description: "A recruitment website introducing LK Recruitment and its work, with a space to help candidates discover available roles.",
+    tags: ["Next.js", "Tailwind CSS"],
+    visual: "lk",
+    demo: "https://lkrecruitmentrw.com/",
+    github: "https://github.com/mariegrace31/recruitment_frontend",
+  },
 ];
