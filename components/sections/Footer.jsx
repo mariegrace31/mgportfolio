@@ -1,0 +1,2 @@
+import { Heart, ArrowUpRight } from "lucide-react"; import Container from "@/components/ui/Container"; import { site } from "@/config/site";
+export default function Footer(){return <footer className="footer"><Container className="footer-inner"><span>© {new Date().getFullYear()} {site.name}. All rights reserved.</span><a href="#home">Made with <Heart size={13} fill="currentColor"/> by {site.name}<ArrowUpRight size={12}/></a></Container></footer>}

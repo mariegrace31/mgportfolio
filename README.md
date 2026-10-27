@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Marie-Grâce — Frontend Developer Portfolio
 
-## Getting Started
+A responsive single-page portfolio built with Next.js App Router, React, Tailwind CSS v4, Framer Motion, and Lucide icons.
 
-First, run the development server:
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000. Use Node.js 20.9 or newer (required by this Next.js version).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Customize
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Personal details and profile/social links: `config/site.js`
+- Skills, experience, stats, projects, and articles: `data/`
+- Portrait image: add `public/images/marie-grace.jpg` and replace the portrait placeholder in `components/sections/Hero.jsx` with a Next Image.
+- CV: add `public/marie-grace-cv.pdf`.
+- Project thumbnails currently use CSS mockups in `components/sections/Projects.jsx` and can be replaced with project images.
+- Update the testimonial name, role, avatar, and quote in `components/sections/CTA.jsx`.
+- The contact form has client-side browser validation and a success state. Connect `submit` in `components/sections/Contact.jsx` to an API route or Formspree before using it to send messages.
 
-## Learn More
+## Build
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+npm run start
+```
