@@ -1,5 +1,5 @@
 export const site = {
-  name: "Marie-Grâce",
+  name: "Marie-Grace",
   role: "Frontend Developer",
   email: "your-email@example.com",
   phone: "+243 000 000 000",

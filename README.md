@@ -15,7 +15,7 @@ Open http://localhost:3000. Use Node.js 20.9 or newer (required by this Next.js 
 
 - Personal details and profile/social links: `config/site.js`
 - Skills, experience, stats, projects, and articles: `data/`
-- Portrait image: add `public/images/marie-grace.jpg` and replace the portrait placeholder in `components/sections/Hero.jsx` with a Next Image.
+- Portrait image: replace `app/assets/profile.jpg` with your preferred portrait (keep the import path and update the file extension if it changes).
 - CV: add `public/marie-grace-cv.pdf`.
 - Project thumbnails currently use CSS mockups in `components/sections/Projects.jsx` and can be replaced with project images.
 - Update the testimonial name, role, avatar, and quote in `components/sections/CTA.jsx`.

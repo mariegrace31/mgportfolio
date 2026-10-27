@@ -1,6 +1,6 @@
 export const stats = [
-  { value: "3+", label: "Years of experience", icon: "briefcase" },
-  { value: "24+", label: "Projects completed", icon: "layers" },
-  { value: "18+", label: "Happy clients", icon: "users" },
-  { value: "98%", label: "Client satisfaction", icon: "heart" },
+  { value: "4+", label: "Years of experience", icon: "briefcase" },
+  { value: "23+", label: "Projects completed", icon: "layers" },
+  { value: "UX", label: "User-first experiences", icon: "users" },
+  { value: "A11y", label: "Accessible interfaces", icon: "heart" },
 ];

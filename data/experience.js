@@ -1,5 +1,4 @@
 export const experience = [
-  { period: "2023 — PRESENT", role: "Frontend Developer", company: "Basje Tech", description: "Building polished web products and internal tools with a focus on thoughtful interfaces, accessibility, and maintainable systems." },
-  { period: "2021 — 2023", role: "Independent Web Developer", company: "Freelance", description: "Partnered with small teams and growing businesses to bring useful, responsive digital experiences to life." },
-  { period: "2020 — 2021", role: "The beginning", company: "Self-directed learning", description: "Found my way into frontend development through curiosity, small experiments, and a love for the details of the web." },
+  { period: "2023 — PRESENT", role: "Frontend Developer & Freelancer", company: "Organisations & Independent projects", description: "Building polished web products and partnering with clients to create useful, responsive digital experiences." },
+  { period: "2021 — 2023", role: "Self-learning & software development training", company: "Microverse", description: "Developed my frontend skills through Microverse’s collaborative, project-based program and a commitment to lifelong learning." },
 ];

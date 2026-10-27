@@ -62,6 +62,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .orb-ring { position: absolute; border: 1px solid rgb(152 135 255 / 15%); border-radius: 50%; inset: 8%; }
 .ring-two { inset: 16%; border-color: rgb(152 135 255 / 10%); }
 .portrait-placeholder { width: 60%; aspect-ratio: .79; border-radius: 48% 48% 25% 25%; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; flex-direction: column; background: linear-gradient(145deg, #403a81 0%, #272750 52%, #17172f 100%); border: 1px solid rgb(189 174 255 / 35%); box-shadow: 0 0 90px rgb(123 94 255 / 27%), inset 0 0 45px rgb(175 160 255 / 12%); }
+.portrait-placeholder .profile-photo { object-fit: cover; object-position: center 25%; }
 .portrait-placeholder::after { content: ""; position: absolute; inset: 0; background: linear-gradient(155deg, transparent 25%, rgb(255 255 255 / 8%) 48%, transparent 60%); }
 .portrait-initials { color: rgb(235 230 255 / 80%); font-size: clamp(45px, 6vw, 78px); font-weight: 300; letter-spacing: 5px; }
 .portrait-caption { color: #bbb4ed; font-size: 8px; letter-spacing: 1.8px; }
