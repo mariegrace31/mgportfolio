@@ -1,14 +1,14 @@
 export const site = {
   name: "Marie-Grace",
   role: "Frontend Developer",
-  email: "your-email@example.com",
-  phone: "+243 000 000 000",
+  email: "mariegracebmg@gmail.com",
+  phone: "+243 972 784 202",
   cv: "/marie-grace-cv.pdf",
   photo: "/images/marie-grace.jpg",
+  formspreeFormId: "mljjbbwd",
   links: {
-    github: "https://github.com/your-username",
-    linkedin: "https://linkedin.com/in/your-username",
-    x: "https://x.com/your-username",
-    instagram: "https://instagram.com/your-username",
+    github: "https://github.com/mariegrace31",
+    linkedin: "https://www.linkedin.com/in/marie-gr%C3%A2ce-bahati/",
+    medium: "https://medium.com/@mariegracebmg",
   },
 };

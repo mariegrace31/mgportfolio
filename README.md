@@ -19,7 +19,12 @@ Open http://localhost:3000. Use Node.js 20.9 or newer (required by this Next.js 
 - CV: add `public/marie-grace-cv.pdf`.
 - Project thumbnails currently use CSS mockups in `components/sections/Projects.jsx` and can be replaced with project images.
 - Update the testimonial name, role, avatar, and quote in `components/sections/CTA.jsx`.
-- The contact form has client-side browser validation and a success state. Connect `submit` in `components/sections/Contact.jsx` to an API route or Formspree before using it to send messages.
+- The contact form validates fields, submits to Formspree, and shows a success popup after a successful response.
+
+### Connect the contact form to Formspree
+
+1. Confirm in [Formspree](https://formspree.io/) that this form sends notifications to `mariegracebmg@gmail.com` and that the address is verified.
+2. The site is configured with form ID `mljjbbwd`; it shows its success popup only after Formspree confirms a successful submission.
 
 ## Build
 
