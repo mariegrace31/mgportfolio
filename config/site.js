@@ -3,7 +3,7 @@ export const site = {
   role: "Frontend Developer",
   email: "mariegracebmg@gmail.com",
   phone: "+243 972 784 202",
-  cv: "/marie-grace-cv.pdf",
+  cv: "/marie_resume.pdf",
   photo: "/images/marie-grace.jpg",
   formspreeFormId: "mljjbbwd",
   links: {
