@@ -1,6 +1,6 @@
 export const stats = [
   { value: "4+", label: "Years of experience", icon: "briefcase" },
   { value: "23+", label: "Projects completed", icon: "layers" },
-  { value: "Usability", label: "User-centered design", icon: "users" },
-  { value: "Inclusive", label: "Accessible by design", icon: "heart" },
+  { value: "Thoughtful", label: "Designed around real needs", icon: "users" },
+  { value: "User-friendly", label: "Easy to use", icon: "heart" },
 ];

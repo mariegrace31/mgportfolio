@@ -15,5 +15,12 @@ export const articles = [
     read: "3 min read",
     href: "https://medium.com/@mariegracebmg/beyond-the-code-why-soft-skills-are-a-developers-secret-weapon-af13ae15a852",
   },
-  { category: "JAVASCRIPT", date: "MAY 18, 2024", title: "A calmer approach to building for the web", read: "6 min read" },
+  {
+    category: "AI",
+    date: "OCT 29, 2026",
+    title: "AI in Software Development: What to Embrace and What to Avoid",
+    description: "AI can make you faster, but only if you stay in the driver’s seat.",
+    read: "4 min read",
+    href: "https://medium.com/@mariegracebmg/ai-in-software-development-what-to-embrace-and-what-to-avoid-69f09456b483",
+  },
 ];
