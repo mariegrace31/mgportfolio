@@ -166,10 +166,11 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .projects-grid > * > .project-card { width:100%; min-height:100%; }
   .project-action { min-height:34px; }
   .blog-grid { grid-auto-rows:1fr; }
-  .blog-card { display:grid; grid-template-rows:auto auto 1fr auto; }
-  .blog-card .blog-art { grid-column:1; grid-row:1/5; }
+  .blog-card { display:grid; grid-template-rows:auto auto auto auto; }
+  .blog-card .blog-art { grid-column:1; grid-row:1/-1; height:auto; align-self:stretch; }
+  .blog-art-shape { display:none; }
   .blog-meta { grid-column:2; grid-row:1; }
   .blog-card h3 { grid-column:2; grid-row:2; font-size:11px; }
   .blog-card-featured .blog-description { grid-column:2; grid-row:3; }
-  .blog-card .project-link { grid-column:2; grid-row:4; align-self:end; margin-top:0; padding-top:8px; }
+  .blog-card .project-link { grid-column:2; grid-row:4; justify-self:start; align-self:start; margin-top:8px; padding-top:0; }
 }
